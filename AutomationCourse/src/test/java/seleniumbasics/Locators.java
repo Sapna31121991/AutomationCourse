@@ -34,7 +34,9 @@ public class Locators extends Base {
 		
 		driver.findElement(By.xpath("//button[@type='button'and @id='button-one']"));//locate using AND
 		driver.findElement(By.xpath("//button[@id='button-one'or id='button-one-electronics']"));//locate using OR
+		
 		driver.findElement(By.xpath("//div[contains(text(),'Single Input Field')]//parent::div[@class='card']"));//using parent node
+		
 		driver.findElement(By.xpath("//div[@class='card']//child::button[(@id='button-one')]"));//using child node
 		driver.findElement(By.xpath("//button[@id='button-one']//following::div[@class='card']"));//following
 		driver.findElement(By.xpath("//button[@id='button-one']//preceding::div[@class='card']"));//preceding
