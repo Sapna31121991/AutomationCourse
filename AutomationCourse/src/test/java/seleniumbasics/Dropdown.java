@@ -13,11 +13,11 @@ public class Dropdown extends Base{
 		select.selectByIndex(2);
 		WebElement dropDown_2=driver.findElement(By.xpath("//select[@id='dropdowm-menu-2']"));
 		Select select2=new Select(dropDown_2);
-		select2.selectByVisibleText("TestNG");
+		select2.selectByVisibleText("JUnit");
 		
 		WebElement dropDown_3=driver.findElement(By.xpath("//select[@id='dropdowm-menu-3']"));
 		Select select3=new Select(dropDown_3);
-		select3.selectByValue("javascript");
+		select3.selectByValue("jquery");
 	}
 
 	public static void main(String[] args) {
@@ -27,7 +27,6 @@ public class Dropdown extends Base{
 		drop.handlingDropdown();
 	//	drop.driverCloseAndQuit();
 		
-
 	}
 
 }
