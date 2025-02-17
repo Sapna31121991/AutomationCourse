@@ -12,7 +12,7 @@ public class NavigationCommands extends Base {
 		NavigationCommands navigation = new NavigationCommands();
 		navigation.initializeBrowser();
 		navigation.navigationCommands();
-		navigation.driverCloseAndQuit();
+		//navigation.driverCloseAndQuit();
 
 	}
 
