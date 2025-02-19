@@ -11,7 +11,7 @@ public class HandlingCheckBox extends Base{
 		WebElement checkBox1=driver.findElement(By.xpath("//input[@id='gridCheck']"));//to select a check box
 		checkBox1.click();
 		
-		// Locating multiple checkboxes using a common class attribute
+		// Locating multiple checkboxes using a common cla ss attribute
 		List<WebElement> multipleCheckBox=driver.findElements(By.xpath("//input[@class='check-box-list']"));//mulitiple check box selection using List interface(Use findElements)
 		for(int i=0; i<multipleCheckBox.size(); i++)
 		{
@@ -37,6 +37,9 @@ public class HandlingCheckBox extends Base{
         // isEnabled() returns true if the element is enabled, otherwise false
 		System.out.println(showValue.isEnabled());
 		
+		
+		WebElement enable=driver.findElement(By.xpath("//button[@id='button-one']"));
+		System.out.println(enable.isEnabled());
 	}
 	public static void main(String[] args) {
 		HandlingCheckBox checkBox=new HandlingCheckBox();
